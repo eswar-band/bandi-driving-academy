@@ -1,0 +1,26 @@
+{
+  "name": "Bandi Driving Academy",
+  "shortName": "Bandi",
+  "logoSubtitle": "DRIVING ACADEMY",
+  "tagline": "Drive with confidence. Learn from the best.",
+  "city": "Visakhapatnam",
+  "state": "Andra Pradesh",
+  "address": {
+    "line1": "RTC Complex, Visakhapatnam, Andhra Pradesh",
+    "postalCode": "530004"
+  },
+  "contact": {
+    "phone": "+919642846845",
+    "phoneLink": "+9196428468",
+    "email": "info@bandidrivingacademy.com",
+    "whatsapp": ""
+  },
+  "hours": "Mon to Sat: 6:00 AM to 8:00 PM",
+  "serviceAreas": ["RTC Complex", "MVP Colony", "Old Dairy Form", "RK Beach and More"],
+  "social": {
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "linkedin": ""
+  }
+}
