@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bandi Driving Academy | Professional Driving School</title>
+<meta name="description" content="Bandi Driving Academy offers professional, patient and certified driving instructors for beginners, teens, adults and refresher lessons.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Caveat:wght@600&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<svg class="sprite" width="0" height="0" aria-hidden="true">
+<symbol id="user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4.5 4-6 8-6s7 1.500 8 6"/></symbol>
+<symbol id="cal" viewBox="0 0 24 24"><rect x="3.500" y="5" width="17" height="15.500" rx="2.500"/><path d="M3.500 10h17M8 3v4M16 3v4"/></symbol>
+<symbol id="car" viewBox="0 0 24 24"><path d="M4 16v-4l2-5h12l2 5v4M4 16h16M4 16v2.500M20 16v2.500"/><circle cx="8" cy="13.500" r=".8"/><circle cx="16" cy="13.500" r=".8"/></symbol>
+<symbol id="ref" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-14-5.300L4 9M4 4v5h5M4 12a8 8 0 0 0 14 5.300L20 15M20 20v-5h-5"/></symbol>
+<symbol id="shield" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3 8.500-7 10-4-1.500-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+<symbol id="tag" viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.500" cy="8.500" r="1.200"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></symbol>
+<symbol id="phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+<symbol id="award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.500"/><path d="M8.500 14l-1.500 7 5-3 5 3-1.500-7"/></symbol>
+<symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+<symbol id="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="moon" viewBox="0 0 24 24"><path d="M20 14.500A8 8 0 0 1 9.500 4 8 8 0 1 0 20 14.500z"/></symbol>
+<symbol id="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.900 4.900l1.400 1.400M17.700 17.700l1.400 1.400M4.900 19.100l1.400-1.400M17.700 6.300l1.400-1.400"/></symbol>
+<symbol id="wheel" viewBox="0 0 48 48"><circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="24" cy="24" r="5" fill="currentColor"/><path d="M4 22l15 1.500M44 22l-15 1.500M24 29v15" stroke="currentColor" stroke-width="4" fill="none"/></symbol>
+</svg>
+
+<header>
+<div class="wrap">
+<a class="logo" href="#top" aria-label="Bandi Driving Academy" data-aria="{name}"><svg><use href="#wheel"/></svg><span><b data-tpl="{shortName}">Bandi</b><small data-tpl="{logoSubtitle}">DRIVING ACADEMY</small></span></a>
+<nav aria-label="Main">
+<a class="on" href="#home" aria-current="true">Home</a><a href="#why">About Us</a><a href="#courses">Courses</a><a href="#pricing">Pricing</a><a href="#reviews">Testimonials</a><a href="#contact">Contact</a>
+</nav>
+<a class="tel" href="tel:+15551234567" data-href="tel:{contact.phoneLink}"><svg class="i"><use href="#phone"/></svg><span data-tpl="{contact.phone}">+1 (555) 123-4567</span></a>
+<button class="theme" id="theme" type="button" aria-label="Switch to dark mode"><svg class="i moon"><use href="#moon"/></svg><svg class="i sun"><use href="#sun"/></svg></button>
+<button class="btn book">Book a Lesson</button>
+</div>
+</header>
+
+<main id="top">
+<div class="hero" id="home"><div class="wrap">
+<div>
+<p class="eyebrow" data-tpl="Premium driving lessons in {city}">Premium driving lessons in your city</p>
+<h1>Drive with Confidence.<span>Learn from the Best.</span></h1>
+<p class="lead">At <span data-tpl="{name}">Bandi Driving Academy</span>, we provide professional, patient, and certified driving instructors to help you become a safe, skilled, and confident driver. Whether you're a beginner or need a refresher, we're here to guide you every step of the way.</p>
+<div class="cta"><button class="btn book">Book your lesson <svg class="i"><use href="#arr"/></svg></button><a class="btn ghost" href="#why">See why students choose us</a></div>
+<div class="trust">
+<div><span class="ic"><svg class="i"><use href="#user"/></svg></span><span><b>Certified instructors</b><small>Experienced and friendly</small></span></div>
+<div><span class="ic"><svg class="i"><use href="#cal"/></svg></span><span><b>Flexible scheduling</b><small>Learn at your convenience</small></span></div>
+<div><span class="ic"><svg class="i"><use href="#award"/></svg></span><span><b>High pass rates</b><small>Your success is our goal</small></span></div>
+</div>
+</div>
+<div class="scene">
+<img src="assets/images/hero-road.svg" alt="Illustration of a car on an open road" width="600" height="460">
+<span class="note note-hero">Safe drivers<br>build a safer<br>tomorrow</span>
+</div>
+</div></div>
+
+<section class="s" id="courses"><div class="wrap">
+<div class="head"><div><h2>Our driving courses</h2><p class="sub">We offer a range of driving lessons to suit your needs. Choose the course that's right for you and start your journey today.</p></div><a class="btn ghost" href="#pricing">View all courses</a></div>
+<div class="cards">
+<div class="card"><span class="ic ic-blue"><svg class="i"><use href="#user"/></svg></span><h3>Beginner driving lessons</h3><p>Perfect for first-time drivers. Build your skills and gain confidence on the road.</p><a href="#" class="book">Learn more</a></div>
+<div class="card"><span class="ic ic-green"><svg class="i"><use href="#shield"/></svg></span><h3>Teen driving courses</h3><p>Structured training and test preparation for teens (ages 16+).</p><a href="#" class="book">Learn more</a></div>
+<div class="card"><span class="ic ic-purple"><svg class="i"><use href="#user"/></svg></span><h3>Adult driving classes</h3><p>Learn at your pace with personalized instruction for adults.</p><a href="#" class="book">Learn more</a></div>
+<div class="card"><span class="ic ic-orange"><svg class="i"><use href="#ref"/></svg></span><h3>Refresher lessons</h3><p>Get back on track with confidence, whether it's been a while or you just need a little practice.</p><a href="#" class="book">Learn more</a></div>
+<div class="card"><span class="ic ic-teal"><svg class="i"><use href="#car"/></svg></span><h3>Automatic or manual</h3><p>Choose between automatic or manual transmission training.</p><a href="#" class="book">Learn more</a></div>
+</div>
+</div></section>
+
+<section class="s alt" id="why"><div class="wrap why">
+<div class="cab">
+<img src="assets/images/cab-view.svg" alt="View from the driver's seat down an open road" width="480" height="360">
+<span class="note note-cab">Better training.<br>Safer roads.</span>
+</div>
+<div>
+<h2 data-tpl="Why {name}?">Why Bandi Driving Academy?</h2>
+<p class="sub">We're more than just a driving school. We're your partner in building lifelong driving skills. Our proven methods, experienced instructors, and modern vehicles set us apart.</p>
+<div class="feats">
+<div><span class="ic"><svg class="i"><use href="#shield"/></svg></span><span><b>Experienced and certified instructors</b><small>Professional, patient, and supportive</small></span></div>
+<div><span class="ic"><svg class="i"><use href="#award"/></svg></span><span><b>High pass rates</b><small>Our students succeed</small></span></div>
+<div><span class="ic"><svg class="i"><use href="#car"/></svg></span><span><b>Modern, safe vehicles</b><small>Well-maintained, dual-control cars</small></span></div>
+<div id="pricing"><span class="ic"><svg class="i"><use href="#tag"/></svg></span><span><b>Affordable packages</b><small>Quality training at the best value</small></span></div>
+<div><span class="ic"><svg class="i"><use href="#cal"/></svg></span><span><b>Flexible class schedules</b><small>Evenings, weekends, and custom plans</small></span></div>
+<div><span class="ic"><svg class="i"><use href="#pin"/></svg></span><span><b>Local and trusted</b><small data-tpl="Proudly serving {city}">Proudly serving [Your City Name]</small></span></div>
+</div>
+</div>
+</div></section>
+
+<section class="s" id="reviews"><div class="wrap">
+<div class="head"><div><h2>What our students say</h2><p class="sub">Real stories from real people who achieved their driving goals with us.</p></div></div>
+<div class="quotes">
+<div class="q"><span class="av av-pink">SJ</span><div><div class="stars" aria-label="5 stars">★★★★★</div><p>"Excellent experience! The instructor was patient and professional. I passed my test on the first try!"</p><b>Sarah Johnson</b><small>New driver</small></div></div>
+<div class="q"><span class="av av-blue">MB</span><div><div class="stars" aria-label="5 stars">★★★★★</div><p>"Great school with flexible timings. The lessons were well-structured and easy to follow. Highly recommend!"</p><b>Michael Brown</b><small>Adult learner</small></div></div>
+<div class="q"><span class="av av-teal">ED</span><div><div class="stars" aria-label="5 stars">★★★★★</div><p data-tpl="&quot;The best driving school in {city}! Friendly staff, modern cars, and excellent training.&quot;">"The best driving school in [Your City Name]! Friendly staff, modern cars, and excellent training."</p><b>Emily Davis</b><small>Teen driver</small></div></div>
+</div>
+</div></section>
+
+<section class="banner">
+<img src="assets/images/banner-hills.svg" alt="" width="1200" height="240" aria-hidden="true">
+<div class="wrap"><h2>Start your driving journey today!</h2><p data-tpl="Join hundreds of happy students in {city} and get on the road to freedom.">Join hundreds of happy students in [Your City Name] and get on the road to freedom.</p><button class="btn book">Book your lesson <svg class="i"><use href="#arr"/></svg></button></div>
+<span class="note">Local.<br>Trusted.<br>Professional.</span>
+</section>
+</main>
+
+<footer id="contact"><div class="wrap">
+<div class="cols">
+<div><a class="logo" href="#top"><svg><use href="#wheel"/></svg><span><b data-tpl="{shortName}">Bandi</b><small data-tpl="{logoSubtitle}">DRIVING ACADEMY</small></span></a><p data-tpl="{tagline}">Drive with confidence. Learn from the best.</p>
+<div class="soc"><a href="#" aria-label="Facebook" data-href="{social.facebook}" data-external>f</a><a href="#" aria-label="Instagram" data-href="{social.instagram}" data-external>ig</a><a href="#" aria-label="YouTube" data-href="{social.youtube}" data-external>yt</a><a href="#" aria-label="LinkedIn" data-href="{social.linkedin}" data-external>in</a></div></div>
+<div><h4>Quick links</h4><ul><li><a href="#top">Home</a></li><li><a href="#why">About Us</a></li><li><a href="#courses">Courses</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#reviews">Testimonials</a></li></ul></div>
+<div><h4>Contact us</h4><ul>
+<li><svg class="i"><use href="#phone"/></svg><a href="tel:+15551234567" data-href="tel:{contact.phoneLink}" data-tpl="{contact.phone}">+1 (555) 123-4567</a></li>
+<li><svg class="i"><use href="#mail"/></svg><a href="mailto:info@example.com" data-href="mailto:{contact.email}" data-tpl="{contact.email}">info@example.com</a></li>
+<li><svg class="i"><use href="#pin"/></svg><span data-tpl="{address.line1}, {city}, {state} {address.postalCode}">123 Main Street, [Your City Name], [Your State] 12345</span></li>
+<li><svg class="i"><use href="#clock"/></svg><span data-tpl="{hours}">Mon to Sat: 6:00 AM to 8:00 PM</span></li></ul></div>
+<div><h4>We serve</h4><ul data-areas><li>[Your City Name]</li><li>Downtown</li><li>West End</li><li>Lakeside</li><li>Riverside and more</li></ul></div>
+</div>
+<div class="legal"><span>© 2026 <span data-tpl="{name}">Bandi Driving Academy</span>. All rights reserved.</span><span>Privacy Policy &nbsp;|&nbsp; Terms &amp; Conditions</span></div>
+</div></footer>
+
+<dialog id="dlg" aria-labelledby="dt">
+<button class="xbtn" id="x" type="button" aria-label="Close">&times;</button>
+<div id="form" class="pane">
+<h3 id="dt">Let's plan your first lesson.</h3>
+<p class="lede">Share a few details and we'll prepare your enquiry. It opens in WhatsApp so you can send it to us.</p>
+<div class="g2">
+<div class="fld"><label for="n">Your name</label><input id="n" placeholder="Full name" autocomplete="name" maxlength="60" aria-describedby="f-n"><p class="ferr" id="f-n"></p></div>
+<div class="fld"><label for="p">Phone number</label><input id="p" type="tel" inputmode="tel" placeholder="Best contact number" autocomplete="tel" maxlength="20" aria-describedby="f-p"><p class="ferr" id="f-p"></p></div>
+</div>
+<div class="fld"><label for="e">Email address <span class="hint">(optional)</span></label><input id="e" type="email" placeholder="you@example.com" autocomplete="email" maxlength="80" aria-describedby="f-e"><p class="ferr" id="f-e"></p></div>
+<div class="fld"><label for="l">Preferred pickup location</label><input id="l" placeholder="Area, landmark or full address" autocomplete="street-address" maxlength="120" aria-describedby="f-l"><p class="ferr" id="f-l"></p></div>
+<div class="fld"><label for="c">Course of interest</label>
+<select id="c"><option>Beginner Driving Lessons</option><option>Teen Driving Courses</option><option>Adult Driving Classes</option><option>Refresher Lessons</option><option>Automatic / Manual</option></select></div>
+<div class="g2">
+<div class="fld"><label for="t">Transmission</label><select id="t"><option>Either / Not sure</option><option>Automatic</option><option>Manual</option></select></div>
+<div class="fld"><label for="w">Preferred days</label><select id="w"><option>Any day</option><option>Weekdays</option><option>Weekends</option></select></div>
+</div>
+<div class="fld"><label for="s">Time slot <span class="hint">(30-minute class)</span></label><select id="s" required aria-describedby="f-s"></select><p class="ferr" id="f-s"></p></div>
+<p class="err" id="err" role="alert"></p>
+<button class="btn go" id="send" type="button">Prepare enquiry <svg class="i"><use href="#arr"/></svg></button>
+<p class="note2">Nothing is stored on this site. Your details are sent only when you tap Send in WhatsApp.</p>
+</div>
+<div id="done" class="pane" hidden>
+<h3>One last step</h3>
+<p class="ok" id="msg"></p>
+<div class="stack"><a class="btn go" id="wa" href="#" target="_blank" rel="noopener noreferrer">Open WhatsApp</a><button class="btn ghost go" id="close" type="button">Close</button></div>
+</div>
+</dialog>
+
+<script src="js/app.js"></script>
+</body>
+</html>
