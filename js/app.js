@@ -6,7 +6,11 @@ function pick(o,p){return p.split('.').reduce(function(a,k){return a==null?a:a[k
 /* fill "{a.b}" tokens; returns null if any token is missing/empty so the HTML fallback text stays */
 function fill(t,d){var ok=true,s=t.replace(/\{([\w.]+)\}/g,function(m,p){var v=pick(d,p);if(v==null||String(v).trim()===''){ok=false;return m}return String(v)});return ok?s:null}
 function applyDetails(d){
-  NAME=d.name||NAME;WA_NUMBER=String(pick(d,'contact.whatsapp')||'').replace(/\D/g,'');
+  NAME=d.name||NAME;
+  var c=d.contact=d.contact||{},cc=String(c.countryCode||'').replace(/\D/g,''),wa=String(c.whatsapp||'').replace(/\D/g,'');
+  if(wa.length===10&&cc)wa=cc+wa; /* wa.me needs the country code */
+  WA_NUMBER=wa;
+  if(!c.phoneLink){var ph=String(c.phone||'').replace(/\D/g,'');if(ph)c.phoneLink='+'+(ph.length===10?cc:'')+ph} /* tap-to-call number built from the phone */
   document.querySelectorAll('[data-tpl]').forEach(function(el){var s=fill(el.getAttribute('data-tpl'),d);if(s!==null)el.textContent=s});
   document.querySelectorAll('[data-aria]').forEach(function(el){var s=fill(el.getAttribute('data-aria'),d);if(s!==null)el.setAttribute('aria-label',s)});
   document.querySelectorAll('[data-href]').forEach(function(el){var s=fill(el.getAttribute('data-href'),d);
@@ -32,7 +36,7 @@ th.addEventListener('click',function(){setTheme(root.getAttribute('data-theme')=
 /* ripple */
 document.addEventListener('click',function(e){var b=e.target.closest('.btn');if(!b)return;var r=b.getBoundingClientRect(),s=Math.max(r.width,r.height)*2.2,o=document.createElement('span');o.className='rip';o.style.cssText='width:'+s+'px;height:'+s+'px;left:'+(e.clientX-r.left-s/2)+'px;top:'+(e.clientY-r.top-s/2)+'px';b.appendChild(o);setTimeout(function(){o.remove()},650)});
 /* active menu link while scrolling */
-var links=[].slice.call(document.querySelectorAll('nav a')),secs=['home','courses','why','reviews','contact'],tick=false;
+var links=[].slice.call(document.querySelectorAll('nav a')),secs=['home','courses','why','tips','reviews','contact'],tick=false;
 function spy(){tick=false;var y=window.scrollY+110,cur='home';
 secs.forEach(function(id){var el=$(id);if(el&&el.getBoundingClientRect().top+window.scrollY<=y)cur=id});
 if(window.innerHeight+window.scrollY>=document.documentElement.scrollHeight-4)cur='contact';
