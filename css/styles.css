@@ -152,3 +152,19 @@ dialog option{color:var(--ink)}
 .note-cab{right:8%;top:8%;color:#0b1d45;font-size:26px}
 .ic-blue{background:#2f73f0}.ic-green{background:#3ea05a}.ic-purple{background:#6a52d9}.ic-orange{background:#f08a1c}.ic-teal{background:#12a89a}
 .av-pink{background:#d6568a}.av-blue{background:#2f73f0}.av-teal{background:#12a89a}
+/* driving tips */
+.tips{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.tip{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease,background-color .35s,border-color .35s}
+.tip:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(15,27,51,.12)}
+.tip img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;background:#bfe0ff}
+.tip>div{padding:16px 18px 20px}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand);margin-bottom:6px}
+.tip h3{font-size:17px;margin:0 0 6px;line-height:1.3}
+.tip p{margin:0;color:var(--mute);font-size:14px}
+@media(max-width:1020px){.tips{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.tips{grid-template-columns:1fr}}
+/* header: keep one line when the menu gets longer */
+header .wrap{gap:20px}
+nav{gap:20px}
+nav a,.tel,.logo,header .btn{white-space:nowrap}
+@media(max-width:1180px){.tel{display:none}}
